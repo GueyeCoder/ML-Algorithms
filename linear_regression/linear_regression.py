@@ -1,7 +1,7 @@
 import numpy as np 
 
 class LinearRegression:
-    def __init__(self, l_rate=0.001, n_iters=1000):
+    def __init__(self, l_rate=0.01, n_iters=1000):
         self.l_rate = l_rate
         self.n_iters = n_iters
         self.weights = None
@@ -20,7 +20,7 @@ class LinearRegression:
 
 
     def predict(self, X):
-        y_predicted = np.dot(X, self.weights) + self.bias
-        return y_predicted
+        y_approximated = np.dot(X, self.weights) + self.bias
+        return y_approximated
 
     
