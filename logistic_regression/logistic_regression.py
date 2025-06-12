@@ -1,7 +1,7 @@
 import numpy as np  
 
 class LogisticRegression:
-    def __init__(self, l_rate=0.001, n_iters=1234):
+    def __init__(self, l_rate=0.001, n_iters=1000):
         self.l_rate = l_rate
         self.n_iters = n_iters
         self.weight = None
